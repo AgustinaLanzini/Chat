@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17ea6ce5-f0dd-4a08-af08-2ef6368b6d04" name="Default Changelist" comment="" />
+    <list default="true" id="17ea6ce5-f0dd-4a08-af08-2ef6368b6d04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cP5SaNkxXsCITK1Xj50iwemBLO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -16,9 +35,103 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="F:/Downloads/visualvm_201/bin/visualvm.exe" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.isistan.server" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Agustina">
+    <configuration name="Agustina" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <module name="Chat" />
+      <option name="PROGRAM_PARAMETERS" value="localhost Agustina" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isistan.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.ChatTest" />
+      <module name="Chat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ivan" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <module name="Chat" />
+      <option name="PROGRAM_PARAMETERS" value="localhost Ivan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isistan.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.isistan.server.Server" />
+      <module name="Chat" />
+      <option name="PROGRAM_PARAMETERS" value="6663" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isistan.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Victoria" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <module name="Chat" />
+      <option name="PROGRAM_PARAMETERS" value="localhost Victoria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.isistan.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Agustina" />
+      <item itemvalue="Application.Victoria" />
+      <item itemvalue="Application.Ivan" />
+      <item itemvalue="Application.ChatTest" />
+      <item itemvalue="Application.Server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.ChatTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -30,10 +143,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590417388851</updated>
+      <workItem from="1590417392196" duration="11329000" />
+      <workItem from="1590501405511" duration="1433000" />
+      <workItem from="1590502858801" duration="27000" />
+      <workItem from="1590503038851" duration="14601000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="403" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590520323390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="403" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590520323390" />
+    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1590521775735">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590521775735" />
+    <state width="914" height="168" key="GridCell.Tab.0.bottom" timestamp="1590548800535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
+    <state width="914" height="168" key="GridCell.Tab.0.center" timestamp="1590548800535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
+    <state width="914" height="168" key="GridCell.Tab.0.left" timestamp="1590548800534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800534" />
+    <state width="914" height="168" key="GridCell.Tab.0.right" timestamp="1590548800535">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
+    <state x="0" y="94" key="SettingsEditor" timestamp="1590431239442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590431239442" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590503039343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590503039343" />
+    <state x="210" y="279" key="extract.method.dialog" timestamp="1590427542851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="279" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590427542851" />
   </component>
 </project>
