@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ea6ce5-f0dd-4a08-af08-2ef6368b6d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/GUIUpdater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Victoria" type="Application" factoryName="Application">
+    <configuration name="Victoria" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
       <module name="Chat" />
       <option name="PROGRAM_PARAMETERS" value="localhost Victoria" />
@@ -147,6 +147,8 @@
       <workItem from="1590501405511" duration="1433000" />
       <workItem from="1590502858801" duration="27000" />
       <workItem from="1590503038851" duration="14601000" />
+      <workItem from="1590719259582" duration="840000" />
+      <workItem from="1591193283679" duration="10002000" />
     </task>
     <servers />
   </component>
@@ -154,38 +156,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="403" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590520323390">
+    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591200090648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590520323390" />
-    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1590521775735">
+    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591200090648" />
+    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1591193853027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590521775735" />
-    <state width="914" height="168" key="GridCell.Tab.0.bottom" timestamp="1590548800535">
+    <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1591193853027" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1591193897811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="168" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
-    <state width="914" height="168" key="GridCell.Tab.0.center" timestamp="1590548800535">
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591193897811" />
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1591203471072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="168" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
-    <state width="914" height="168" key="GridCell.Tab.0.left" timestamp="1590548800534">
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
+    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1591203471072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="168" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800534" />
-    <state width="914" height="168" key="GridCell.Tab.0.right" timestamp="1590548800535">
+    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
+    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1591203471072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="168" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590548800535" />
+    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
+    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1591203471072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
     <state x="0" y="94" key="SettingsEditor" timestamp="1590431239442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590431239442" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590503039343">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591193580024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590503039343" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591193580024" />
     <state x="210" y="279" key="extract.method.dialog" timestamp="1590427542851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

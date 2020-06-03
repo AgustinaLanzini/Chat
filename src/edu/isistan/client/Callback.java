@@ -2,11 +2,11 @@ package edu.isistan.client;
 
 import edu.isistan.chat.IChat;
 import edu.isistan.common.Protocol;
-
 import java.io.DataOutputStream;
 import java.io.IOException;
 
 public class Callback implements IChat {
+
     private DataOutputStream dos;
 
     public Callback(DataOutputStream dos) {
@@ -19,7 +19,6 @@ public class Callback implements IChat {
             dos.writeByte(Protocol.GENERAL_MSG);
             dos.writeUTF(text);
         } catch (IOException e) {
-
         }
     }
 
@@ -30,7 +29,6 @@ public class Callback implements IChat {
             dos.writeUTF(to);
             dos.writeUTF(text);
         } catch (IOException e) {
-
         }
     }
 }

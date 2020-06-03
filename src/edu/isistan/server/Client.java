@@ -1,17 +1,16 @@
 package edu.isistan.server;
 
 import edu.isistan.common.Protocol;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
 public class Client implements Runnable {
+
     private Socket socket;
     private Server server;
     private DataOutputStream dos;
-
     private String userName;
 
     public Client(Socket socket, Server server) {
@@ -37,19 +36,26 @@ public class Client implements Runnable {
         }
     }
 
-    public void connect(DataInputStream dis) throws IOException {
-        byte type = dis.readByte();
-        if (type == Protocol.HANDSHAKE) {
-            userName = dis.readUTF();
-            if(!this.server.addClient(userName, this)) {
-                userName = null;
-                socket.close();
-                return;
+    public void connect(DataInputStream dis)  {
+        try {
+            byte type = dis.readByte();
+            if (type == Protocol.HANDSHAKE) {
+                userName = dis.readUTF();
+                if (!this.server.addClient(userName, this)) {
+                    userName = null;
+                    this.dos.writeByte(Protocol.ERROR_INVALID_USER);
+                    socket.close();
+                    return;
+                }
             }
         }
-    }
+        catch (IOException e){
 
-    public void processMessage(DataInputStream dis) throws IOException {
+        }
+        }
+
+    public void processMessage(DataInputStream dis) {
+        try {
             byte type = dis.readByte();
             switch (type) {
                 case (Protocol.GENERAL_MSG):
@@ -59,10 +65,11 @@ public class Client implements Runnable {
                     String receiver = dis.readUTF();
                     text = dis.readUTF();
                     this.server.sendPrivateMsg(userName, receiver, text);
-
             }
-        //TODO implementar el resto del protocolo
-    }
+        }
+        catch (IOException e){
+        }
+        }
 
     public void removeUser(String userName) {
         try {

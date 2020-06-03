@@ -12,6 +12,7 @@ public class Server {
 
     private Map<String, Client> clients;
     private int port;
+
     public Server(int port) {
         this.port = port;
         this.clients = new HashMap<>();
@@ -39,12 +40,8 @@ public class Server {
         if (this.clients.containsKey(userName)) {
             return false;
         }
-        //avisa a cada cliente que agregue al nuevo cliente
         this.clients.values().forEach(c -> c.addUser(userName));
-
-        //avisa al cliente nuevo que agregue los clientes conectados
         this.clients.keySet().forEach(i->client.addUser(i));
-
         this.clients.put(userName, client);
         return true;
     }
@@ -54,7 +51,6 @@ public class Server {
         this.clients.values().forEach(c -> c.removeUser(userName));
     }
 
-    //HASTA ACA
     public synchronized void sendGeneralMsg(String userName, String text) {
         this.clients.entrySet().parallelStream().
                 filter( e -> !e.getKey().equals(userName)).
@@ -64,8 +60,6 @@ public class Server {
     public synchronized void sendPrivateMsg(String sender, String receiver, String text){
         this.clients.get(receiver).sendPrivateMsg(sender, text);
     }
-
-
 
 
 }
