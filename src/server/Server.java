@@ -1,4 +1,4 @@
-package edu.isistan.server;
+package server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -19,7 +19,7 @@ public class Server {
     }
 
     public static void main(String[] args) {
-        int port = 6663;
+        int port =  Integer.parseInt(args[0]);
         Server server = new Server(port);
         server.listen();
     }
@@ -40,9 +40,14 @@ public class Server {
         if (this.clients.containsKey(userName)) {
             return false;
         }
-        this.clients.values().forEach(c -> c.addUser(userName));
-        this.clients.keySet().forEach(i->client.addUser(i));
         this.clients.put(userName, client);
+        this.clients.entrySet()
+                .parallelStream()
+                .filter(entry -> !entry.getKey().equals(userName))
+                .forEach(entry -> {entry.getValue().addUser(userName);
+                                    client.addUser(entry.getKey());
+                });
+
         return true;
     }
 

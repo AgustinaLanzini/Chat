@@ -1,4 +1,4 @@
-package edu.isistan.common;
+package common;
 
 public class Protocol {
     public static final byte HANDSHAKE = 0;

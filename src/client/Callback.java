@@ -1,7 +1,7 @@
-package edu.isistan.client;
+package client;
 
-import edu.isistan.chat.IChat;
-import edu.isistan.common.Protocol;
+import chat.IChat;
+import common.Protocol;
 import java.io.DataOutputStream;
 import java.io.IOException;
 

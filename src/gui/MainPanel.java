@@ -1,4 +1,4 @@
-package edu.isistan.chat.gui;
+package gui;
 
 import javax.swing.JPanel;
 import java.awt.BorderLayout;

@@ -1,4 +1,4 @@
-package edu.isistan.chat;
+package chat;
 
 public interface IChat {
 

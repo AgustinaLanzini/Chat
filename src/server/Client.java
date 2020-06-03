@@ -1,6 +1,6 @@
-package edu.isistan.server;
+package server;
 
-import edu.isistan.common.Protocol;
+import common.Protocol;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -28,7 +28,7 @@ public class Client implements Runnable {
                 processMessage(dis);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+
         } finally {
             if(userName!=null) {
                 this.server.removeUser(userName);
@@ -50,26 +50,23 @@ public class Client implements Runnable {
             }
         }
         catch (IOException e){
-
         }
         }
 
-    public void processMessage(DataInputStream dis) {
-        try {
+    public void processMessage(DataInputStream dis) throws IOException {
             byte type = dis.readByte();
             switch (type) {
                 case (Protocol.GENERAL_MSG):
                     String text = dis.readUTF();
                     this.server.sendGeneralMsg(userName, text);
+                    break;
                 case (Protocol.PRIVATE_MSG):
                     String receiver = dis.readUTF();
                     text = dis.readUTF();
                     this.server.sendPrivateMsg(userName, receiver, text);
             }
         }
-        catch (IOException e){
-        }
-        }
+
 
     public void removeUser(String userName) {
         try {

@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ea6ce5-f0dd-4a08-af08-2ef6368b6d04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/edu/isistan/client/GUIUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/chat/ChatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat/ChatGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/chat/IChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chat/IChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/chat/gui/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/chat/gui/MainWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainWindows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/chat/gui/UserPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/UserPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Callback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/client/GUIUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/GUIUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/common/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/isistan/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ChatTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +56,14 @@
       <recent name="edu.isistan.server" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Agustina">
+  <component name="RunManager" selected="Application.Ivan">
     <configuration name="Agustina" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="Chat" />
-      <option name="PROGRAM_PARAMETERS" value="localhost Agustina" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 6663 Agustina" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.isistan.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.ChatTest" />
-      <module name="Chat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +72,12 @@
       </method>
     </configuration>
     <configuration name="Ivan" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="Chat" />
-      <option name="PROGRAM_PARAMETERS" value="localhost Ivan" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 6663 Ivan" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.isistan.client.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +86,12 @@
       </method>
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.isistan.server.Server" />
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
       <module name="Chat" />
       <option name="PROGRAM_PARAMETERS" value="6663" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.isistan.server.*" />
+          <option name="PATTERN" value="server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +100,12 @@
       </method>
     </configuration>
     <configuration name="Victoria" type="Application" factoryName="Application" singleton="false">
-      <option name="MAIN_CLASS_NAME" value="edu.isistan.client.Client" />
+      <option name="MAIN_CLASS_NAME" value="client.Client" />
       <module name="Chat" />
-      <option name="PROGRAM_PARAMETERS" value="localhost Victoria" />
+      <option name="PROGRAM_PARAMETERS" value="localhost 6663 Victoria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.isistan.client.*" />
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,13 +117,11 @@
       <item itemvalue="Application.Agustina" />
       <item itemvalue="Application.Victoria" />
       <item itemvalue="Application.Ivan" />
-      <item itemvalue="Application.ChatTest" />
       <item itemvalue="Application.Server" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.ChatTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +140,9 @@
       <workItem from="1590502858801" duration="27000" />
       <workItem from="1590503038851" duration="14601000" />
       <workItem from="1590719259582" duration="840000" />
-      <workItem from="1591193283679" duration="10002000" />
+      <workItem from="1591193283679" duration="14998000" />
+      <workItem from="1591221725406" duration="2385000" />
+      <workItem from="1591224125030" duration="570000" />
     </task>
     <servers />
   </component>
@@ -156,10 +150,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591200090648">
+    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591223087346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591200090648" />
+    <state x="328" y="78" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591223087346" />
     <state x="945" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1591193853027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -168,30 +162,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591193897811" />
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1591203471072">
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom" timestamp="1591224112078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
-    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1591203471072">
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.0.center" timestamp="1591224112078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
-    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1591203471072">
+    <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.0.left" timestamp="1591224112078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
-    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1591203471072">
+    <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right" timestamp="1591224112078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591203471072" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.1.bottom" timestamp="1591224112078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.1.center" timestamp="1591224112078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.1.left" timestamp="1591224112078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
+    <state width="1877" height="250" key="GridCell.Tab.1.right" timestamp="1591224112078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="250" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591224112078" />
     <state x="0" y="94" key="SettingsEditor" timestamp="1590431239442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590431239442" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591193580024">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591224623103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591193580024" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591224623103" />
     <state x="210" y="279" key="extract.method.dialog" timestamp="1590427542851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

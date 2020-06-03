@@ -1,8 +1,8 @@
-package edu.isistan.client;
+package client;
 
-import edu.isistan.chat.ChatGUI;
-import edu.isistan.chat.gui.MainWindows;
-import edu.isistan.common.Protocol;
+import chat.ChatGUI;
+import gui.MainWindows;
+import common.Protocol;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
@@ -31,7 +31,7 @@ public class Client {
 
     public static void main(String[] args) {
         try {
-            Client c = new Client(args[0], 6663, args[1]);
+            Client c = new Client(args[0], Integer.parseInt(args[1]), args[2]);
             c.connect();
         } catch (IOException e) {
             e.printStackTrace();

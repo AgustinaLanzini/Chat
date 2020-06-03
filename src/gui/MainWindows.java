@@ -1,12 +1,12 @@
-package edu.isistan.chat.gui;
+package gui;
 
 import java.awt.EventQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.swing.JFrame;
 
-import edu.isistan.chat.ChatGUI;
-import edu.isistan.chat.IChat;
+import chat.ChatGUI;
+import chat.IChat;
 import javax.swing.JTabbedPane;
 import java.awt.BorderLayout;
 
